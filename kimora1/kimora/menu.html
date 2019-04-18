@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Menu Déroulant</title>
+<meta charset 'utf-8'>
+</head>
+<body>
+
+</header>
+
+<style>
+        body{
+	margin:0;
+	padding:0;
+}
+
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+
+   background:rgb(15, 164, 223);
+   color:rgb(236, 162, 42);
+   
+}
+#menu-deroulant> li {
+
+    display: inline-block;
+	margin:0px 10px;
+	padding:3px;
+}
+#menu-deroulant ul li {
+	
+	padding:5px;
+	background:black;
+    color:white;
+	
+}
+#menu-deroulant a {
+    text-decoration: none;
+	color:white;
+}
+#menu-deroulant ul {
+    position: absolute;
+	text-align:left;
+	margin:10px 0px 0px -14px ;
+
+    display:none;
+	
+}
+#menu-deroulant li:hover ul {
+
+    display:block;
+}
+
+#menu-deroulant li:hover{
+	background:rgb(94, 21, 231);
+	
+}
+</style>
+
+<ul id="menu-deroulant">
+			<li href="#" style="color:blue ">ACCUEIL
+			</li>
+			<li>Sonatel
+				<ul class="SousMenu">
+					<li ><a href ="#" title="de bon et droles bd">A propos</a></li>
+					<li ><a href ="#">Organigramme</a></li>
+					<li ><a href ="#"><a href ="#">Services</a></li>
+					<li ><a href ="#">Annonces</a></li>
+				</ul>
+			</li>
+			<li>Sonatel Académie
+				<ul class="SousMenu">
+					<li ><a href ="#"><a href ="#">Historique</a></li>
+					<li ><a href ="#">Strategies</a></li>
+					<li ><a href ="#">Particularitée</a></li>
+					<li ><a href ="#"><a href ="#"><a href ="#">Membres</a></li>
+				</ul>
+			</li>
+			<li>APPRENDRE
+				<ul class="SousMenu" >
+					<li ><a href ="#">Html</a></li>
+					<li ><a href ="#">Css</a></li>
+					<li ><a href ="#">Javascript</a></li>
+					<li ><a href ="#">Php</a></li>
+				</ul>
+			</li>
+			<li>S'inscrire
+				<ul class="SousMenu">
+					<li ><a href ="#">Basketball</a></li>
+					<li ><a href ="#">Football</a></li>
+					<li ><a href ="#">Lutte</a></li>
+					<li ><a href ="#">Petit Camp</a></li>
+				</ul>
+			</li>
+			
+        </ul>
+        
+<style>
+
+</style>
+
+
+
+
+</body>
+        
+</html>

@@ -1,0 +1,117 @@
+body{
+    font-family: Verdana, Tahoma, sans-serif ;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    border: 1px solid white;
+    width: 1288px;
+    height: 800px;
+    background-color: rgb(49, 219, 231);
+}
+.container1{
+    background-color: rgb(49, 219, 231);  
+}
+.container2{
+    background-color:  rgb(49, 219, 231);
+}
+.container3{
+    background-color:  rgb(49, 219, 231);
+}
+nav{
+    width: 100%;
+    baczkground-color: RGBa;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    list-style-type: none;
+}
+nav > ul > li{
+    float:left;
+    position: relative;
+}
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.submenu{
+    display: none;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: none;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav > ul > li > a{
+    padding: 20px 30px;
+    color:#FFF;
+}
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px ;
+}
+
+.menu1:hover{
+    border-top: 5px solid #036b5ada;
+    background-color: RGBa(228, 77, 38, 0.15)
+}
+.menu2:hover{
+    border-top: 5px solid #971e69ee;
+    background-color: RGBa(000, 112, 192, 0.15)
+}
+.menu3:hover{
+    border-top: 5px solid #3b0530;
+    background-color: RGBa(241, 211, 79, 0.15);
+}
+.menu4:hover{
+    border-top: 5px solid #7c0724;
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+@media screen and (max-width : 780px){
+    .menu-mobile{
+        display: block;
+        color: #FFF;
+        background-color: RGBa(29, 197, 151, 097);
+        text-align: center;
+        padding: 12px 0px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li, nav ul li a{
+        width:100%;
+        text-align: center;
+    }
+    nav ul li a,nav ul li:hover a{
+        padding: 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(28, 201, 245);
+}
+
+.chambre3.jpg{
+    margin-right: 250px;
+}

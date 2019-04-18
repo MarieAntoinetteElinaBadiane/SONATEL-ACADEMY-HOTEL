@@ -1,0 +1,25 @@
+<DIV ID=ejs_photo_box></div>
+			<SCRIPT LANGUAGE=JavaScript>
+				ejs_photo = new Array;
+				ejs_photo[0] = 'Fitt.png';
+				ejs_photo[1] = 'Repas.png';
+				ejs_photo[2] = 'Fitt.png';
+				ejs_photo[3] = 'images/v4.jpg';
+				ejs_photo[4] = 'images/v5.jpg';
+				ejs_photo[5] = 'images/v6.jpg';
+				ejs_photo[6] = 'images/v7.jpg';
+ 
+				function ejs_aff_photos(num)
+					{
+						if(document.getElementById)
+					{
+				ejs_fin = "";
+					if(num!=0)
+				ejs_fin += "<A HREF=# onClick='ejs_aff_photos("+(num-1)+");return(false)'>< Précédent</A>     ";
+					if(num!=(ejs_photo.length-1))
+				ejs_fin += "<A HREF=# onClick='ejs_aff_photos("+(num+1)+");return(false)'>Suivant ></A>";
+					document.getElementById("ejs_photo_box").innerHTML = "<CENTER><IMG SRC='"+ejs_photo[num]+"' BORDER=0><BR>"+ejs_fin+"</CENTER>";
+				}
+					}
+						window.onload = new Function("ejs_aff_photos(0)")
+	</script>

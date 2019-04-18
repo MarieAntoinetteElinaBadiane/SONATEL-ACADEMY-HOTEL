@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reservation</title>
+</head>
+<body background: linear-gradient(90deg, yellow, red);>
+
+
+<style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+body
+{
+font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans- serif;
+font-size: 14px;
+line-height: 1.6;
+background-color: #FFFFFF;
+margin: 0;
+border-top: 5px solid #000000;
+}
+...
+#container
+{
+width: 550px;
+background-color: #FFFFFF;
+margin: 0 auto;
+border-bottom: 5px solid #000000;
+}
+h1 {font-size: 16px;}
+p {color:blue;}
+    </style>
+  </head>
+  <body>
+    
+
+
+       
+
+<style>
+
+#newsletter{
+-webkit-column-count: 2;
+-webkit-column-gap: 20px;
+-webkit-column-rule: 1px solid #0fbbf0;
+-moz-column-count: 2;
+-moz-column-gap: 20px;
+-moz-column-rule: 1px solid #18bff1;
+column-count: 2;
+column-gap: 20px;
+column-rule: 1px solid #e68b0d;
+}
+
+</style>
+<style>
+text {
+font-family: SequentialistBB,
+Papyrus-condensed, Impact,
+sans-serif-condensed, sans-serif;
+font-stretch: condensed;
+}
+</style>
+<figure>
+
+  <figcaption></figcaption>
+  </figure>
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+viewBox="0 0 550 200">
+<!-- styles and speech-bubble path omitted -->
+<text x="210" y="75" dy="0 0 -5 5 5 0 0 -5 5 0 0 0 3 5 0 3
+-3 -3 3 3 -2">
+Bienvenue…A… La
+<tspan x="250" y="120" class="shatner">Sonatel Academy Hotel…</tspan>
+</text>
+</svg>
+
+<div id="container">
+        <header id="header">
+        
+		 <label for="estimated_hours">Durée Estimée</label>
+        <input type="number" name="estimated_hours"
+        min="0" max="1000"
+        id="estimated_hours">
+        <label for="start_date">Date de Début</label>
+<input type="date" name="start_date" id="start_date"
+value="2018-12-04">
+<label for="start_date">Date de départ</label>
+<input type="date" name="start_date" id="start_date"
+value="2018-12-04">
+        <p>Sonatel Academy Hotel </p>
+		
+        </header>
+        <section id="newsletter">
+        <article id="director_news">
+        <header>
+        </header>
+        <div>
+        <aside class="callout">
+       
+        </aside>
+      
+        </div>
+        </article>
+        <article id="awesome_bits">
+        <header>
+          <style>
+            :valid {
+        border:solid lime;
+        font-weight:normal;
+        }
+        :invalid {
+        border:solid grey;
+        font-weight:bold;
+        }
+        :required{
+        background-color:rgb(19, 174, 235);
+        }
+        :optional{
+        background-color:rgb(211, 211, 211);
+        }
+        </style>
+        <form id="myForm">
+            Choisissez un Forfait:
+            <select name="forfait" required="required">
+            <option>Gold</option>
+            <option value="Class">Classique</option>
+            <option>Premium</option>
+            </select><br />
+            <div>
+                <label for="name">Nom et Prenom :</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+             Age:
+        <input type="number" name="age"
+        min="18" max="99" value="30"
+        required="required" /><br />
+        
+        <button type="submit" name="submit">Envoyer</button>
+            
+            Votre Adresse Email:
+            <input type="email" name="email" required="required"/><br />
+            <div>
+                
+            </div>
+            </form>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_xclick">
+              <input type="hidden" name="business" value="accounts@freelanceswitch.com">
+              <input type="hidden" name="item_name" value="Donation">
+              <input type="hidden" name="item_number" value="1">
+              <input type="hidden" name="amount" value="9.00">
+              <input type="hidden" name="no_shipping" value="0">
+              <input type="hidden" name="no_note" value="1">
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="hidden" name="lc" value="AU">
+              <input type="hidden" name="bn" value="PP-PayNowBF">
+              <input type="image" src="https://www.paypal.com/en_AU/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+              <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="10%" height="10%">
+          </form>          <P><A href="https://www.mywari.com/fr/accueil.html" title="Payez avec wari."><IMG src="wari.png" width="10%" height="10%" border="0" alt="Get Firefox" ></A>
+<div>
+       
+        </div>
+    
+        </section>
+		<style>
+		body {
+margin: 0 1em;
+font-family: sans-serif;
+color: navy;
+background-color: rgb(19, 187, 230);
+background-image:('Dalal.png'),
+src('Dalal.png'),
+src('Dalal.png');
+background-size: 40px 40px;
+background-position: 0 0, 20px 0, 20px 20px;
+}
+h1 {
+text-align: center;
+border-radius: 2em / 50%;
+}
+h1::before, h1::after {
+		display: block;
+content: url('../ch06-path-files/diamond.svg')
+url('../ch06-path-files/spade.svg')
+url('../ch06-path-files/heart.svg')
+url('../ch06-path-files/club.svg');
+}
+h1, ul {
+background-color: white;
+background-color: rgba(100%, 100%, 100%, 0.85);
+max-width: 70%;
+margin: 0.5em auto;
+}
+ul {
+padding: 1em;
+padding-left: calc(1em + 10%);
+border: solid #999 1em;
+border-radius: 10%;
+border-image-source: url(svg-in-css-border-gradient.svg);
+border-image-slice: 5% 5%;
+border-image-width: 4.7%; /* = 5% / 105% */
+border-image-repeat: stretch;
+}
+li {
+line-height: 2em;
+}
+ul li:nth-of-type(4n+1) {
+list-style-image: url('../ch06-path-files/diamond.svg');
+}
+ul li:nth-of-type(4n+2) {
+list-style-image: url('../ch06-path-files/spade.svg');
+}
+ul li:nth-of-type(4n+3) {
+list-style-image: url('../ch06-path-files/heart.svg');
+}
+ul li:nth-of-type(4n+4) {
+list-style-image: url('../ch06-path-files/club.svg');
+        </style>
+        <p><h1> Nous sommes honnorés de votre visite et vous souhaitons un agréable séjour.</h1>
+        </p>
+		<h1>A très bientot... </h1>
+
+        <footer id="footer">
+        <h6>
+        Envoyez vos suggestions
+        <a href="mailto:sonatelacademy@gmail.com">à notre service consommateur</a>.
+        </h6>
+        </footer>
+        </div>
+
+                </body>
+                </html>
+
+
+
